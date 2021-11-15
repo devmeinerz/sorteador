@@ -14,7 +14,7 @@ function sortNumbers(min, max) {
 //button 
 function sortNumberBtn() {
     if (min.value === '' || max.value === '') {
-        alert("Preencha os campos");
+        result.innerHTML = `<p style="font-size: 1rem; color:#ffffff";">Preencha os valores acima!</p>`;
     } else {
         result.innerHTML = `<p style="font-size: 1rem; color:#ffffff";">Resultado:</p>`;
         result.innerHTML += `${sortNumbers(parseInt(min.value), parseInt(max.value))}`;
@@ -32,7 +32,7 @@ function sortNames() {
 //button
 function sortNamesBtn() {
     if (names.value === '') {
-        alert("Preencha os campos");
+        result.innerHTML = `<p style="font-size: 1rem; color:#ffffff";">Preencha o campo acima!</p>`;
     } else {
         result.innerHTML = `<p style="font-size: 1rem; color:#ffffff";">Resultado:</p>`;
         result.innerHTML += `${sortNames()}`;

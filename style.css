@@ -5,6 +5,7 @@
     padding: 0;
     border: 0;
     text-decoration: none;
+    overflow: hidden;
 }
 input:focus, textarea:focus, select:focus{
     -webkit-appearance: none;
@@ -50,13 +51,15 @@ main{
     to{background-color: #ffe600;}
 }
 .select_link{
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     font-family: Roboto;
     margin: 2px;
-    width: 200px;
+    width: 206px;
+    height: 40px;
     font-size: 1.5rem;
     color: #1b2839;
-    padding: 8px;
     background-color: #ffffff;
     border-radius: 5px;
     cursor: pointer;
@@ -93,8 +96,49 @@ main{
     color: #06101d;
     margin-bottom: -20px;
 }
-/* RESPONSIVITY     */
-
-@media (max-width: 680px){
-  
+#footer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000000;
+    width: 100%;
+    height: 30px;
 }
+
+/* FOOTER */
+#footer{
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #1b2839;
+    font-family: Roboto;
+    font-size: 0.8rem;
+    color: #658996;
+}
+#footer p{
+    padding-right: 7vh;
+    animation: loadIn 2s;
+}
+#footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loadIn 2s;
+}
+#footer img{
+    height: 25px;
+    margin: 10px 10px 6px 0;
+}
+.btns:hover{
+    filter:brightness(200);
+    transition: 1.5s ease-in-out; 
+}
+
+/* RESPONSIVITY     */
+/* ainda não implementada */
+
+
+/* @media (max-width: 680px){
+  
+} */
