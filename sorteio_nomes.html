@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sorteador</title>
+</head>
+<body>
+    <main>
+        <section id="home_container">
+            <img src="./assets/images/sorteador_title.png" alt="Sorteador">
+            <br /><br />
+            <div id="names_container">
+                <div class="min_max_text">
+                    <span>Digite os nomes ou palavras separados por vírgula</span>
+                </div>
+                <textarea id="input_names" cols="40" rows="4"></textarea>
+            </div>
+            <br /><br />
+            <button class="select_link" type="button" onclick="sortNamesBtn()">Sortear</button>
+            <a href="./index.html" class="select_link">Voltar</a>
+            <br /><br />
+            <div id="result"></div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+input:focus, textarea:focus, select:focus{
+    -webkit-appearance: none;
+    outline: none;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+body{
+    background: radial-gradient(#1d5569, #1b2839) fixed;
+    width: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home_container{
+    margin-top: 10%;
+    text-align: center;
+    max-width: 650px;
+    border-radius: 20px;
+}
+#home_container img{
+    width: 80%;
+}
+#select_option, span{
+    font-family: Roboto;
+    font-size: 2rem;
+    color: #ffffff;
+}
+#result{
+    font-family: Roboto;
+    font-size: 3rem;
+    color: #ffe600;
+}
+@keyframes animation_btn {
+    from{background-color: #ffffff;}
+    to{background-color: #ffe600;}
+}
+.select_link{
+    display: inline-block;
+    font-family: Roboto;
+    margin: 2px;
+    width: 200px;
+    font-size: 1.5rem;
+    color: #1b2839;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.select_link:hover{
+    transition: 0.1s ease-out;
+    animation: animation_btn 0.5s forwards;
+    box-shadow: 1px 1px 20px #06101d70;
+}
+#min_max_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+.min_max_text span{
+    font-size: 15px;
+}
+#input_min, #input_max{
+    height: 30px;
+    width: 150px;
+    margin: 5px;
+    font-family: Roboto;
+    font-size: 2rem;
+    color: #ffe600;
+    background-color: #00000000;
+    border-bottom: solid #ffffff 2px;
+}
+#input_names{
+    resize: none;    
+    margin: 5px;
+    font-family: Roboto;
+    font-size: 1.3rem;
+    color: #06101d;
+    margin-bottom: -20px;
+}
+/* RESPONSIVITY     */
+
+@media (max-width: 680px){
+  
+}
